@@ -7,12 +7,12 @@ function ItemForm({onItemFormSubmit, onName, onCategory}) {
     <form className="NewItem" onSubmit={onItemFormSubmit}>
       <label>
         Name:
-        <input type="text" name="name" onChange={onName}/>
+        <input type="text" name="name" label="Name" onChange={onName}/>
       </label>
 
       <label>
         Category:
-        <select name="category" onChange={onCategory}>
+        <select name="category" label="Category" onChange={onCategory}>
           <option value="Produce">Produce</option>
           <option value="Dairy">Dairy</option>
           <option value="Dessert">Dessert</option>
