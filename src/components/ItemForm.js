@@ -1,10 +1,10 @@
 import React from "react";
 //import { v4 as uuid } from "uuid";
 
-function ItemForm({onSubmit, onName, onCategory}) {
+function ItemForm({onItemFormSubmit, onName, onCategory}) {
 
   return (
-    <form className="NewItem" onSubmit={onSubmit}>
+    <form className="NewItem" onSubmit={onItemFormSubmit}>
       <label>
         Name:
         <input type="text" name="name" onChange={onName}/>

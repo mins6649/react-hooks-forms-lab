@@ -49,7 +49,7 @@ function ShoppingList({ items }) {
 
   return (
     <div className="ShoppingList">
-      <ItemForm onSubmit={handleSubmit} onName={handleName} onCategory={handleCategory} />
+      <ItemForm onItemFormSubmit={handleSubmit} onName={handleName} onCategory={handleCategory} />
       <Filter searchFilter={searchFilter} onCategoryChange={handleCategoryChange} onSearchChange={handleSearchChange}/>
       <ul className="Items">
         {itemsToDisplay.map((item) => (
